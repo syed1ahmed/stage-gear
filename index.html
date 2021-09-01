@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords" content="HTML5 Template Avo onepage themeforest" />
-    <meta name="description" content="Avo - Onepage Multi-Purpose HTML5 Template" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="official web page of stage gear" />
     <meta name="author" content="" />
 
     <!-- Title  -->
@@ -21,7 +21,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&amp;display=swap"
         rel="stylesheet">
@@ -40,8 +41,6 @@
 
 <body>
 
-
-
     <!-- ==================== Start Loading ==================== -->
 
     <div id="preloader">
@@ -51,12 +50,52 @@
 
 
     <!-- ==================== Start progress-scroll-button ==================== -->
+    <div class="fabs-wrapper">
+        <input id="fabCheckbox" type="checkbox" class="fabs-checkbox" />
+        <label class="fabs" for="fabCheckbox">
+            <i style="text-align: center;padding-left: 15px;padding-top: 15px;color: white;"
+                class="fas fa-comments "></i>
+        </label>
+        <div class="fabs-wheel">
+            <a class="fabs-action fabs-action-1" onclick="openNav()">
+                <i style="color: white;" class="fas fa-info"></i>
+            </a>
+            <a class="fabs-action fabs-action-2">
+                <i style="color: white;" class="fab fa-whatsapp"></i>
+            </a>
+            <a class="fabs-action fabs-action-3">
+                <i style="color: white;" class="fab fa-instagram"></i>
+            </a>
+            <a class="fabs-action fabs-action-4">
+                <i style="color: white;" class="fas fa-phone"></i>
+            </a>
+
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact us</a>
+    </div>
 
     <div class="progress-wrap cursor-pointer">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
+
 
     <!-- ==================== End progress-scroll-button ==================== -->
 
@@ -85,33 +124,49 @@
                 <span class="icon-bar"><i class="fas fa-bars"></i></span>
             </button>
 
+            <!-- offscreen content-->
+
+
+
             <!-- navbar links -->
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link " data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Home</a>
-                        
+                        <a href="#1" class="nav-link"
+                            onclick=" var element1 = document.getElementById('#1'); element1.scrollIntoView();">Home</a>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Showcases</a>
-                        
+                        <a class="nav-link " href="#2"
+                            onclick=" var element7 = document.getElementById('#2'); element7.scrollIntoView();">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#3">Services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                        
+                        <a class="nav-link " href="#4">Our Works</a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#5">Testimonials</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#6">Client</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#7">Contact Us</a>
+
                     </li>
                 </ul>
-                
+
             </div>
+
+
+
         </div>
     </nav>
 
@@ -121,7 +176,7 @@
 
     <!-- ==================== Start Slider ==================== -->
 
-    <header class="slider slider-prlx">
+    <header id="1" class="slider slider-prlx">
         <div class="swiper-container parallax-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -132,9 +187,7 @@
                                     <div class="caption dig">
                                         <h1 data-splitting>Unique <div class="tline">brand Stories</div>
                                         </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Discover Works</span>
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -149,9 +202,7 @@
                                     <div class="caption dig">
                                         <h1 data-splitting>Digital <div class="tline">Design Awards</div>
                                         </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Discover Works</span>
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +217,7 @@
                                     <div class="caption dig">
                                         <h1 data-splitting>Original <div class="tline">Solutions</div>
                                         </h1>
-                                        <a href="#0" class="simple-btn mt-50">
-                                            <span>Discover Works</span>
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -189,10 +238,9 @@
             <div class="swiper-pagination top botm custom-font"></div>
 
             <div class="social-icon">
-                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                <a href="#0"><i class="fab fa-twitter"></i></a>
-                <a href="#0"><i class="fab fa-behance"></i></a>
-                <a href="#0"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#0"><i class="fab fa-instagram"></i></a>
+                <a href="#0"><i class="fab fa-whatsapp"></i></a>
+
             </div>
         </div>
     </header>
@@ -203,7 +251,7 @@
 
     <!-- ==================== Start blc-sec ==================== -->
 
-    <section class="blc-sec section-padding pb-0">
+    <section id="2" class="blc-sec section-padding pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -227,7 +275,7 @@
                             all essential to meeting the
                             ultimate goal. you'll be engaged in with our positive and enthusiastic attitude.
                         </p>
-                        <a href="#0" class="simple-btn custom-font mt-20 wow" data-splitting><span>Know More</span></a>
+
                     </div>
                 </div>
             </div>
@@ -247,7 +295,7 @@
                         <div class="row">
                             <div class="col-md-5 cmd-padding valign">
                                 <div class="img1 wow imago" data-wow-delay=".5s">
-                                    <img src="img/intro/1.jpg" alt="">
+                                    <img src="img/images/img (7).JPG" alt="">
                                 </div>
                             </div>
                             <div class="col-md-7 cmd-padding">
@@ -278,7 +326,7 @@
                             erat. Ut dictum nisi masvitp</p>
                         <div class="ftbox mt-30">
                             <ul>
-                                <li class="wow fadeIn" data-wow-delay=".3s">
+                                <li id="3" class="wow fadeIn" data-wow-delay=".3s">
                                     <span class="icon pe-7s-gleam"></span>
                                     <h6 class="custom-font">Pixel <br> Perfect</h6>
                                     <div class="dots">
@@ -312,74 +360,7 @@
             </div>
         </div>
     </div>
-    <!-- <section class="services section-padding">
-        <div class="container">
-            <div class="row rone">
-                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-monitor"></span>
-                        <h6>Website <br> Developments</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-camera"></span>
-                        <h6>Product <br> Photography</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-phone"></span>
-                        <h6>Mobile App <br> Devlopment</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row rtwo">
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-diskette"></span>
-                        <h6>Document <br> Legal Policy</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-help2"></span>
-                        <h6>Managing <br> Community</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="mas-item">
-                        <span class="icon pe-7s-arc"></span>
-                        <h6>Coustomer <br> Engagement</h6>
-                        <div class="text-right">
-                            <a href="#0" class="more"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <div class="bg-color"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
 
     <!-- ==================== End Services ==================== -->
 
@@ -397,13 +378,14 @@
                 <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft" data-wow-delay=".3s"
                     data-background="img/1.jpg">
                     <h4 class="custom-font">Best Of <br> Our Features</h4>
+                    <a href="#1" class="btn-curve btn-bord btn-lit mt-40"><span>See All Services</span></a>
+                </div>
+                <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft" data-wow-delay=".5s"
+                    data-background="img/1.jpg" style="background-size: cover;">
+                    <h4 class="custom-font">Best Of <br> Our Features</h4>
                     <a href="about.html" class="btn-curve btn-bord btn-lit mt-40"><span>See All Services</span></a>
                 </div>
-                <div class="col-lg-3 col-md-6 item-box wow fadeInLeft" data-wow-delay=".5s">
-                    <span class="icon pe-7s-paint-bucket"></span>
-                    <h6>Graphic Design</h6>
-                    <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
-                </div>
+
                 <div class="col-lg-3 col-md-6 item-box wow fadeInLeft" data-wow-delay=".7s">
                     <span class="icon pe-7s-phone"></span>
                     <h6>Web & <br> Mobile Design</h6>
@@ -465,7 +447,7 @@
     </section>
 
 
-  
+
 
     <!-- ==================== End customer  counter ==================== -->
 
@@ -473,7 +455,7 @@
 
     <!-- ==================== Start works ==================== -->
 
-    <section class="portfolio section-padding pb-70">
+    <section id="4" class="portfolio section-padding pb-70">
         <div class="container">
             <div class="sec-head custom-font">
                 <h6>Portfolio</h6>
@@ -488,98 +470,321 @@
                 <div class="filtering text-center col-12">
                     <div class="filter">
                         <span data-filter='*' class="active">All</span>
-                        <span data-filter='.brand'>Branding</span>
-                        <span data-filter='.web'>Mobile App</span>
-                        <span data-filter='.graphic'>Creative</span>
+                        <span data-filter='.stages'>Stages</span>
+                        <span data-filter='.props'>Props</span>
+                        <span data-filter='.Stalls'>Stalls</span>
+                        <span data-filter='.flee'>Flee Mrket</span>
+                        <span data-filter='.3d'>3D designs</span>
                     </div>
                 </div>
 
                 <!-- gallery -->
                 <div class="gallery full-width">
 
-                    <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items graphic wow fadeInUp" data-wow-delay=".4s">
-                        <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/01.jpg" alt="image">
-                                <div class="item-img-overlay"></div>
-                            </a>
-                        </div>
-                        <div class="cont">
-                            <h6>Creativity Demand</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
-                        </div>
-                    </div>
+
 
                     <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items web lg-mr wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-4 col-md-6 items stages lg-mr wow fadeInUp" data-wow-delay=".4s">
                         <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/02.jpg" alt="image">
+                            <a href="img/images/stage (1).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (1).JPG" alt="stage decor">
                                 <div class="item-img-overlay"></div>
                             </a>
                         </div>
                         <div class="cont">
                             <h6>Through The Breaking</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
+
                         </div>
                     </div>
 
                     <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
                         <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/03.jpg" alt="image">
+                            <a href="img/images/stage (2).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (2).JPG" alt="stage decor">
                                 <div class="item-img-overlay"></div>
                             </a>
                         </div>
                         <div class="cont">
                             <h6>Create With Creatives</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (1).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (1).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Flee market</h6>
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/img (5).JPG " target="_blank" class="imago wow">
+                                <img src="img/images/img (5).JPG" alt="image">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Creativity Demand</h6>
+
                         </div>
                     </div>
 
                     <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items graphic wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
                         <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/04.jpg" alt="image">
+                            <a href="img/images/stage (3).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (3).JPG" alt="stage decor">
                                 <div class="item-img-overlay"></div>
                             </a>
                         </div>
                         <div class="cont">
                             <h6>Energies of Love</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
+
                         </div>
                     </div>
 
                     <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
                         <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/05.jpg" alt="image">
+                            <a href="img/images/stage (4).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (4).JPG" alt="image">
                                 <div class="item-img-overlay"></div>
                             </a>
                         </div>
                         <div class="cont">
                             <h6>See It Yourself</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
+
                         </div>
                     </div>
-
                     <!-- gallery item -->
-                    <div class="col-lg-4 col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
                         <div class="item-img">
-                            <a href="project-details.html" class="imago wow">
-                                <img src="img/portfolio/mas/06.jpg" alt="image">
+                            <a href="img/images/flee market/flee (3).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (3).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/stage (5).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (5).JPG" alt="image">
                                 <div class="item-img-overlay"></div>
                             </a>
                         </div>
                         <div class="cont">
                             <h6>Blast From The Past</h6>
-                            <span><a href="#0">Design</a>, <a href="#0">WordPress</a></span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/stage (6).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (6).JPG" alt="image">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Blast From The Past</h6>
+
                         </div>
                     </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (8).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (8).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/stage (7).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (7).JPG" alt="image">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Blast From The Past</h6>
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (613).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (13).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/stage (8).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (8).JPG" alt="image">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Blast From The Past</h6>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (5).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (5).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/imgn (1).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/imgn (1).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Create</h6>
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (7).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (7).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/imgn (2).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/imgn (2).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>add new</h6>
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (14).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (14).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/imgn (3).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/imgn (3).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Create</h6>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items flee lg-mr wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/flee market/flee (6).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/flee market/flee (6).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+
+
+                        </div>
+                    </div>
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/imgn (4).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/imgn (4).JPG" alt="stage decor">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Create</h6>
+
+                        </div>
+                    </div>
+
+                    <!-- gallery item -->
+                    <div class="col-lg-4 col-md-6 items stages wow fadeInUp" data-wow-delay=".4s">
+                        <div class="item-img">
+                            <a href="img/images/stage (9).JPG" target="_blank" class="imago wow">
+                                <img src="img/images/stage (9).JPG" alt="image">
+                                <div class="item-img-overlay"></div>
+                            </a>
+                        </div>
+                        <div class="cont">
+                            <h6>Blast From The Past</h6>
+
+                        </div>
+                    </div>
+
+
+
+
 
                 </div>
 
@@ -589,7 +794,80 @@
 
     <!-- ==================== End works ==================== -->
 
+    <!-- ==================== start testimonials ==================== -->
 
+    <section id="5" class="testimonials section-padding bg-img" data-background="img/pattern.png">
+        <div class="container position-re">
+            <div class="sec-head custom-font text-center">
+                <h6 class="wow fadeIn" data-wow-delay=".5s">What Peapole Says?</h6>
+                <h3 class="wow" data-splitting>Testimonials.</h3>
+                <span class="tbg">Testimonials</span>
+            </div>
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay=".5s">
+                <div class="col-lg-8">
+                    <div class="slic-item">
+                        <div class="item">
+                            <p>Working with Avo digital agency to support our organic and paid social media activity
+                                has
+                                extended the marketing activities we are able to achieve platform has made
+                                collaboration
+                                easy.</p>
+                            <div class="info">
+                                <div class="cont">
+                                    <div class="author">
+                                        <div class="img">
+                                            <img src="img/clients/1.jpg" alt="">
+                                        </div>
+                                        <h6 class="author-name custom-font">Alex Regelman</h6>
+                                        <span class="author-details">Co-founder, Colabrio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>Avo started out managing our SEO efforts, but their scientific approach to digital
+                                marketing and the results they have achieved made it an easy decision for us to
+                                handover
+                                the management.</p>
+                            <div class="info">
+                                <div class="cont">
+                                    <div class="author">
+                                        <div class="img">
+                                            <img src="img/clients/1.jpg" alt="">
+                                        </div>
+                                        <h6 class="author-name custom-font">Alex Regelman</h6>
+                                        <span class="author-details">Co-founder, Colabrio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>I would highly recommend Avo Digital. I worked with the team on an animation for our
+                                ‘Click & Collect’ service. This team is different from any other agency I have
+                                worked
+                                with in the past.</p>
+                            <div class="info">
+                                <div class="cont">
+                                    <div class="author">
+                                        <div class="img">
+                                            <img src="img/clients/1.jpg" alt="">
+                                        </div>
+                                        <h6 class="author-name custom-font">Alex Regelman</h6>
+                                        <span id="6" class="author-details">Co-founder, Colabrio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- ==================== end testimonials ==================== -->
 
     <!-- ==================== Start clients Brands ==================== -->
 
@@ -710,7 +988,7 @@
     <!-- ==================== Start Footer ==================== -->
 
     <footer class="footer-half sub-bg section-padding pb-0">
-        <div class="container">
+        <div id="7" class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="cont">
@@ -731,17 +1009,15 @@
                             <h6 class="custom-font stit simple-btn">Follow Us</h6>
                             <div class="social">
                                 <a href="#0" class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#0" class="icon">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#0" class="icon">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-pinterest"></i>
-                                </a>
-                                <a href="#0" class="icon">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+
                             </div>
                         </div>
                     </div>

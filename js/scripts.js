@@ -1,11 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Avo
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
+    
 
 -----------------------------------------------------------------------------------*/
 
@@ -675,7 +670,7 @@ $(document).ready(function () {
         }
     });
     jQuery('.progress-wrap').on('click', function (event) {
-        event.preventDefault();
+        
         jQuery('html, body').animate({ scrollTop: 0 }, duration);
         return false;
     })
